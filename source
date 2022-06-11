@@ -1,0 +1,103 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("Orchid UI v2 (BETA)")
+
+local serv = win:Server("Main Tab", "")
+
+local btns = serv:Channel("Quick Scripts")
+
+btns:Button(
+    "Da Hood Modded",
+    function() loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
+        DiscordLib:Notification("Orchid UI", "GUI has been loaded.", "Okay!")
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "Da Hood",
+    function() loadstring(game:HttpGet(("https://pastebin.com/raw/h6CaSmCD")))();
+        DiscordLib:Notification("Orchid UI", "GUI has been loaded.", "Okay!")
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "Arsenal",
+    function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Storm99999/whitelistkeys/main/SCRIPT_VIP.lua"))()
+        DiscordLib:Notification("Orchid UI", "GUI has been loaded.", "Okay!")
+    end
+)
+
+btns:Seperator()
+
+
+btns:Button(
+    "Hoop Central 6",
+    function() key,HC6 = "hoop horny"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sinsly/hellokitty/main/HC6"))()
+        DiscordLib:Notification("Orchid UI", "GUI has been loaded.", "Okay!")
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "MM2",
+    function()
+        DiscordLib:Notification("Orchid UI", "OUT OF ORDER", "Okay!")
+    end
+)
+
+local btns = serv:Channel("Universal Scripts")
+
+btns:Button(
+    "Orchid Mini UI v.0.0.1",
+    function() loadstring(game:HttpGet("https://pastebin.com/raw/NgD8hR09",true))()
+        DiscordLib:Notification("Orchid UI", "Loaded GUI", "Okay!")
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "FOV Changer (120)",
+    function() workspace.CurrentCamera.FieldOfView = 120
+        DiscordLib:Notification("Orchid UI", "Loaded Script.", "Okay!")
+    end
+)
+
+local lbls = serv:Channel("Hubs")
+btns:Button(
+    "EZ Hub",
+    function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+        DiscordLib:Notification("Orchid UI", "Loaded Script.", "Okay!")
+    end
+)
+
+btns:Seperator()
+
+btns:Button(
+    "Cheesy Hub",
+    function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseyMine/CheeseyHub/main/CheeseyHubV6"))()
+        DiscordLib:Notification("Orchid UI", "Loaded Script.", "Okay!")
+    end
+
+)
+
+local lbls = serv:Channel("Changelog")
+lbls:Label("Updated 6/10/2022")
+lbls:Label("-Added Hubs!")
+lbls:Label("Introducing Quick Scripts.")
+lbls:Label("Quick Scripts is a new feature I have added!")
+lbls:Label("It has every game in one section with 1 script that you can load quickly!")
+lbls:Label("Due to this feature, I'm adding a new section!")
+lbls:Label("This section will have each game have it's own mini-section.")
+lbls:Label("These mini sections will contain tons of scripts for that one game!")
+lbls:Label("Feature coming 6/13/2022!")
+lbls:Label("I did not make any of these scripts!")
+lbls:Label("All I did was put them into a UI library.")
+lbls:Label("discord: moh#7330")
